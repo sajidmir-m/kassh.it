@@ -174,6 +174,19 @@ const Hero: React.FC = () => {
                   <div className="text-xs text-emerald-700/70">Fresh</div>
                 </div>
 
+                {/* Featured Product Image */}
+                <div className="mt-4 relative">
+                  <div className="w-full h-32 rounded-lg overflow-hidden bg-gradient-to-br from-emerald-100 to-green-100 flex items-center justify-center">
+                    <img 
+                      src="https://images.unsplash.com/photo-1542838132-92c53300491e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80" 
+                      alt="Fresh Groceries" 
+                      className="w-full h-full object-cover"
+                    />
+                    <div className="absolute inset-0 bg-gradient-to-t from-emerald-900/20 to-transparent" />
+                    <div className="absolute bottom-2 left-2 text-white text-xs font-semibold">Fresh Daily</div>
+                  </div>
+                </div>
+
                 <div className="mt-6 grid grid-cols-2 gap-4">
                   <div className="p-3 rounded-lg bg-white border border-emerald-100">
                     <div className="text-xs font-semibold text-emerald-800">Fruits</div>
@@ -185,17 +198,21 @@ const Hero: React.FC = () => {
                     <div className="text-sm text-emerald-700/80 mt-2">Daily delivery</div>
                   </div>
 
-                  <div className="p-3 rounded-lg bg-white border border-emerald-100 col-span-2">
-                    <div className="text-xs font-semibold text-emerald-800">Special Offers</div>
-                    <div className="text-sm text-emerald-700/80 mt-2">20% off on dairy products</div>
+                  <div className="p-3 rounded-lg bg-gradient-to-r from-pink-50 to-rose-50 border border-pink-200 col-span-2">
+                    <div className="flex items-center gap-2">
+                      <div className="w-2 h-2 bg-pink-500 rounded-full animate-pulse"></div>
+                      <div className="text-xs font-semibold text-pink-800">Special Offers</div>
+                    </div>
+                    <div className="text-sm text-pink-700/80 mt-2 font-medium">🎉 20% off dairy products</div>
+                    <div className="text-xs text-pink-600/70 mt-1">Limited time offer!</div>
                   </div>
                 </div>
 
                 <div className="mt-6 flex gap-3 items-center">
-                  <button className="flex-1 rounded-full py-2 text-sm font-medium bg-emerald-600 text-white hover:bg-emerald-700">
+                  <button className="flex-1 rounded-full py-2 text-sm font-medium bg-emerald-600 text-white hover:bg-emerald-700 transition-colors">
                     Shop Now
                   </button>
-                  <button className="px-3 py-2 rounded-full text-sm border border-emerald-200 text-emerald-800 bg-white hover:bg-emerald-50">Cart</button>
+                  <button className="px-3 py-2 rounded-full text-sm border border-emerald-200 text-emerald-800 bg-white hover:bg-emerald-50 transition-colors">Cart</button>
                 </div>
               </div>
             </motion.div>
